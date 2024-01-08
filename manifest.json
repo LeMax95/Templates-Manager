@@ -1,0 +1,15 @@
+{
+"manifest_version": 3,
+"version":"1",
+"name": "Templates Search",
+"action": {
+    "default_popup":"main.html",
+    "default_icon": "Runic_letter_kauna.png"
+  },
+  
+  "permissions":["tabs","storage"
+                ]
+  
+}
+
+

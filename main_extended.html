@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;600&family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+        
+
+    <title>Template Manager</title>
+
+
+</head>
+
+<body>
+    <div class="test">
+       <div>
+         <h3  class="header__test" >
+
+         </h3>
+       </div>      
+       <div>
+        <span class="body__test">
+
+        </span>
+       </div>
+    </div>
+  
+
+    <div id="contextMenu" class="context-menu" style="display: none"> 
+       
+        <ul class="menu"> 
+            <li class="trash" id="cont_del"><a href="#"> Delete </a></li> 
+        </ul>
+    </div> 
+    <section class = "menu_bar">
+     
+      <section class="icons">
+            <button class="hide_icon" style="display: inline-block" disabled> <img src="./icons/hide_ico.png" >  </button>              
+            <button class = "add_tmpl_button" style="display: inline-block" disabled>  <img src="./icons/add_tmpl_ico.png">   </button>
+            <button class = "settings_color_ico" style="display: inline-block" disabled>  <img src="./icons/settings_color.svg">   </button>
+      </section>
+      
+        <section class = "search__output">
+             <input class = "search__menu_bar" type="text" id="input-el__menu_bar" value=""/>
+             <section class="ul__list" id="ul__list__ext"></section>      
+         </section>
+
+     
+      
+     <section class = "buttons_ext">
+     
+        <button class = 'button' id="modify"style="display: inline-block" title="Show all templates">My Templates
+        <span class="svg-container2" id="svg-container" title="Download backup">
+            <img src="./Icons/download.svg" alt="SVG" class="svg-image" id="svg-image2">
+        </span>
+    </button>
+        <button disabled class = 'button' id="save_t"  style="display: inline-block" > Save </button>
+        <button class = 'button' id="cancel_t"  style="display: none" > Cancel </button>  
+        <button class="button" id="add_t"  style ="display:inline-block "title="Add Template">Add
+            <span class="svg-container" id="svg-container" title="Upload from a file">
+                <img src="./Icons/upload.svg" alt="SVG" class="svg-image" id="svg-image">
+            </span>
+           
+          
+
+        </button>
+       
+        <button class = 'button' id="upload_t"  style="display: none" > Upload </button>
+        <hr>
+        <hr>
+        
+        <button  class = 'button' id="download_t"  style="display: none" > Export </button>
+     
+
+    </section>
+       
+    </section>
+  
+<section class = "content drag_element" id="content">
+        <span class = "close_span">Close</span>
+        <header class = "header__add_template" style="color: beige;"> New Template </header>
+    <section class = "input-area">
+           
+            <span style="color: beige;">Title</span>
+            <div contenteditable="true" id="input-el_name" class ="input-el_name"></div>
+            <span style="color: beige;">Body</span>
+            <span contenteditable="true" id="input-el_body" class ="input-el_body"></span> 
+
+    </section>
+
+    <section class="buttons">
+            <button class = 'button' id="add" > Add </button> 
+            <button class = 'button' id="abort"> Abort </button>
+            
+    </section>
+       
+</section>
+
+
+    <section class  = "Fake_grid" >
+    <section id="SS_C" ></section>
+    <section id="SS_C__upload" class  = "SS_C__upload" ></section>  
+  
+    <section id="main_container" class = "main_container"></section>
+</section>
+
+
+
+<div class="txt_redactor__container">
+    <div class="test110">
+        <button id="bold_btn__redactor">
+            <svg fill="#475B63" height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 202 202" xml:space="preserve">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>       
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>       
+            <g id="SVGRepo_iconCarrier"> <path d="M148.004,94.812c18.332-8.126,28.671-23.362,28.671-42.752c0-17.261-6.954-31.206-20.11-40.328 C145.653,4.166,130.438,0,113.721,0H16.957v34h17v134h-17v34h90.905c14.819,0,35.992-2.245,52.705-12.94 c16.241-10.393,24.476-26.161,24.476-46.868C185.043,118.342,171.057,100.763,148.004,94.812z M103.12,80H73.957V34h26.096 c25.961,0,36.551,6.34,36.551,21.884C136.604,75.816,118.396,80,103.12,80z M73.957,115h30.838c28.537,0,40.177,7.436,40.177,25.663 c0,18.14-13.987,27.337-41.572,27.337H73.957V115z"/> </g>       
+            </svg>
+        </button>
+    
+        <button id="italic_btn__redactor"> 
+            <svg width="16px" height="16px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#475B63">     
+            <g id="SVGRepo_bgCarrier" stroke-width="0"/>     
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>       
+            <g id="SVGRepo_iconCarrier"> <path stroke="#475B63" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3L8 17m4-14H8m4 0h4M8 17H4m4 0h4"/>
+            </g>       
+            </svg>   
+        </button>
+    
+        <button id="underline_btn__redactor">
+            <svg fill="#475B63" width="16px" height="16px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#475B63">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>           
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>           
+                <g id="SVGRepo_iconCarrier"> <path d="M1714.571 1645.714V1920H206v-274.286h1508.571ZM480.286 0v822.857c0 227.246 184.183 411.429 411.428 411.429h137.143c227.246 0 411.429-184.183 411.429-411.429V0h274.285v822.857c0 378.789-307.062 685.714-685.714 685.714H891.714C513.063 1508.571 206 1201.646 206 822.857V0h274.286Z" fill-rule="evenodd"/>
+                </g>            
+                </svg>
+        </button>
+    
+        <button id="strikethrough_btn_redactor">
+            <svg fill="#475B63" width="16px" height="16px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#475B63">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>            
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>            
+                <g id="SVGRepo_iconCarrier"> <path d="M1471.2 1261.689c9.24 67.2 4.92 138.84-16.32 215.64-53.16 190.08-176.64 319.56-348 364.8-46.44 12.24-94.56 17.76-143.04 17.76-209.16 0-424.92-104.04-546.84-225.12l-52.44-56.04 175.68-163.68 49.2 52.92c98.76 97.92 303.48 182.16 456.24 142.08 89.28-23.64 147.48-87.96 177.96-196.92 16.56-60 17.16-109.44 3.12-151.44Zm-31.92-991.08-163.8 175.32c-105.12-98.16-319.2-176.16-469.8-134.76-85.8 23.28-141.6 82.08-170.64 179.76-54.48 183.24 66.72 252 377.76 345.48 71.04 21.36 133.56 40.68 183.96 65.28H1920v240H0v-240h561.72c-135.6-96.84-226.68-243.6-156.72-479.16 67.08-225.84 220.68-311.16 337.8-343.08 247.8-66.72 543.6 48.36 696.48 191.16Z" fill-rule="evenodd"/>
+                </g>            
+                </svg>
+        </button>
+        
+        <button id="olList_btn__redactor">
+            <svg fill="#475B63" width="24px" height="24px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>        
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>           
+                <g id="SVGRepo_iconCarrier">           
+                <path d="M3.59 3.03h12.2v1.26H3.59zm0 4.29h12.2v1.26H3.59zm0 4.35h12.2v1.26H3.59zM.99 4.79h.49V2.52H.6v.45h.39v1.82zm.87 3.88H.91l.14-.11.3-.24c.35-.28.49-.5.49-.79A.74.74 0 0 0 1 6.8a.77.77 0 0 0-.81.84h.52A.34.34 0 0 1 1 7.25a.31.31 0 0 1 .31.31.6.6 0 0 1-.22.44l-.87.75v.39h1.64zm-.36 3.56a.52.52 0 0 0 .28-.48.67.67 0 0 0-.78-.62.71.71 0 0 0-.77.75h.5a.3.3 0 0 1 .27-.32.26.26 0 1 1 0 .51H.91v.38H1c.23 0 .37.11.37.29a.29.29 0 0 1-.33.29.35.35 0 0 1-.36-.35H.21a.76.76 0 0 0 .83.8.74.74 0 0 0 .83-.72.53.53 0 0 0-.37-.53z"/>          
+                </g>
+                </svg>
+        </button>
+    
+        <button id="ulist_btn__redactor">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>          
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>           
+                <g id="SVGRepo_iconCarrier"> <path d="M8 6L21 6.00078M8 12L21 12.0008M8 18L21 18.0007M3 6.5H4V5.5H3V6.5ZM3 12.5H4V11.5H3V12.5ZM3 18.5H4V17.5H3V18.5Z" stroke="#475B63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>           
+            </svg>
+        </button>
+    
+        <section class="colors_section">
+            <button id="color_btn__redactor">
+                <svg fill="#475B63" width="24px" height="24px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>          
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>           
+                    <g id="SVGRepo_iconCarrier"> <path d="M904 816H120c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-80c0-4.4-3.6-8-8-8zm-650.3-80h85c4.2 0 8-2.7 9.3-6.8l53.7-166h219.2l53.2 166c1.3 4 5 6.8 9.3 6.8h89.1c1.1 0 2.2-.2 3.2-.5a9.7 9.7 0 0 0 6-12.4L573.6 118.6a9.9 9.9 0 0 0-9.2-6.6H462.1c-4.2 0-7.9 2.6-9.2 6.6L244.5 723.1c-.4 1-.5 2.1-.5 3.2-.1 5.3 4.3 9.7 9.7 9.7zm255.9-516.1h4.1l83.8 263.8H424.9l84.7-263.8z"/>
+                    </g>           
+                    </svg>
+            </button>
+           
+        </section>
+
+  </div>
+</div>
+
+    <div class="colors_container">
+        <div class="additional">
+            <div class="settings-icon"></div>
+            <div id="custom">
+                <input type="color" id="colorPicker">
+            </div>
+        </div>
+        <button class="color" id="color1"></button>
+        <button class="color" id="color2"></button>
+        <button class="color" id="color3"></button>
+        <button class="color" id="color4"></button>
+        <button class="color" id="color5"></button>
+        <button class="color" id="color6"></button>
+        <button class="color" id="color7"></button>
+        <button class="color" id="color8"></button>
+        <button class="color" id="color9"></button>
+        <button class="color" id="color10"></button>
+    </div> 
+
+ 
+    <div class="colors_container drag_element"  id="edit_mode">
+        <input class="color_edit" type="color" data-color="color1">
+        <input class="color_edit" type="color" data-color="color2">
+        <input class="color_edit" type="color" data-color="color3">
+        <input class="color_edit" type="color" data-color="color4">
+        <input class="color_edit" type="color" data-color="color5">
+        <input class="color_edit" type="color" data-color="color6">
+        <input class="color_edit" type="color" data-color="color7">
+        <input class="color_edit" type="color" data-color="color8">
+        <input class="color_edit" type="color" data-color="color9">
+        <input class="color_edit" type="color" data-color="color10">
+
+        <div class="buttons__edit_colors">
+            <button class="button_edit" id="save_edit__color">Save</button>
+            <button class="button_edit" id="cancel_edit__color">Cancel</button>
+        </div>
+    
+    </div>
+
+    
+
+</body>
+
+
+
+<script src="sweetalert2.all.js" charset= "UTF-8"></script>
+<script src="read-excel-file.min.js" charset= "UTF-8"></script>
+<script src="main.js"></script>
+
+</html>
