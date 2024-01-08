@@ -1,5 +1,7 @@
 *templates_test.json
 *templates.json
+*read-excel-file.min.js
+*sweetalert2.all.js
 *.png
 *.ico
 *.svg
