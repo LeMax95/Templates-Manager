@@ -1,68 +1,38 @@
-# Templates-Manager
+# Auto-Clicker App
 
- ## <span style="font-size:larger;">Description</span>
+ ## <span style="font-size:larger;">Overview</span>
 
-Welcome to Templates-Manager, your versatile text management app! This application has an efficient Rich Text Format (RTF) redactor, providing an easy-to-use platform for creating, organizing, editing textual content, and effortlessly retrieving templates using the user-friendly search feature. Your templates are securely stored in your browser, ensuring accessibility and privacy.
+The Auto-Clicker app automates interaction with target pages by mimicking user behavior. It uses Selenium for automated browsing, searches with random keywords, clicks on links, and simulates random time intervals of page interaction to imitate user activity. The app can be configured to navigate to target URLs, simulate browsing behavior, and log click counts.
 
- ## <span style="font-size:larger;">Key Features:</span>
+ ## <span style="font-size:larger;">Features:</span>
 
-- **Quick Search and Copy:**  
-   Retrieve templates using the user-friendly search feature. Simply enter at least two letters of the template title, and the app dynamically matches it with stored titles, presenting a comprehensive list of results. Click on the desired title to quickly copy it to your clipboard.
+- **VPN Management:**  
+   Switches VPN servers for each session, ensuring anonymity.
 
-- **Efficient RTF Redactor:**  
-  Edit your content with the built-in RTF redactor.
+- **Location Spoofing:**  
+   Generates random geographic coordinates (latitude, longitude) within a specified range.
 
-- **Secure Browser Storage:**  
-  Safely store your templates within your browser, ensuring privacy and accessibility.
+- **Automated Search & Clicks:**  
+  Randomized Google searches and target link clicks.
 
-- **Bulk Template Import:**  
-  Add templates not only one by one but also in bulk from TXT or Excel files, streamlining your template management process.
+- **Human-like Interaction:**  
+   Simulates time spent on pages with random intervals.
 
-- **Backup and Restore:**  
+- **Reporting:**  
   Create and download a backup file to safeguard your templates. Restore your data effortlessly whenever needed.
 
- ## <span style="font-size:larger;">Template Import Formats:</span>
+   ## Setup & Usage
 
-Templates-Manager supports importing templates from Excel (XLSX) and TXT/CSV files. Please follow the specified formats for a smoothy import process:
+### Install Dependencies:
+1. Ensure Python and Selenium are installed.
+2. Set up ExpressVPN (or other VPN services) and specify the path.
 
-- **Excel (XLSX):**
-  Organize your Excel table into two columns. The first column should contain the titles, and the second column should contain the corresponding templates. The order can be either left to right or upside-down; the crucial aspect is the presence of two distinct columns. Here are examples for both formats:
+### Run the App:
+- The app will rotate VPN servers, spoof locations, perform searches, and simulate page interactions with randomized time intervals.
 
-  **Left-to-Right:**
-  ```plaintext
-  | Title   | Template Content         |
-  |---------|--------------------------|
-  | Title1  | Template content for Title1 |
-  | Title2  | Template content for Title2 |
-  | Title3  | Template content for Title3 |
-  ```
-  **Upside-Down:**
-   ```plaintext
-   Title3  
-   Template content for Title3  
-   Title2  
-   Template content for Title2    
-   Title1    
-   Template content for Title1
-   ```
-- **TXT/CSV:** For TXT or CSV files, separate each template entry with an ampersand (`&`) sign. Each entry should start with an ampersand followed by the title and the template content. Here's an example:
+### Reports:
+- The app generates detailed and summary reports of interactions.
 
-```plaintext
-&Title1  
-Template content for Title1  
-&Title2  
-Template content for Title2  
-&Title3  
-Template content for Title3
-```
- ## <span style="font-size:larger;">Compatibility:</span>
+## Conclusion
+The Auto-Clicker app automates interactions with web pages, simulates real user behavior, and includes location spoofing by generating random geographic coordinates. Ideal for tasks like increasing engagement metrics through human-like browsing.
 
-Templates-Manager is designed as a browser extension and has been tested on the following browsers:
-
-- **Google Chrome:**
-  The extension is fully compatible with Google Chrome, providing a seamless user experience.
-
-- **Microsoft Edge:**
-  Templates-Manager has been tested and verified to work efficiently on Microsoft Edge.
-
-Please note that the extension may work on other Chromium-based browsers as well, but it has been specifically optimized and tested on Google Chrome and Microsoft Edge.
