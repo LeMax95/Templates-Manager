@@ -21,7 +21,7 @@ The Auto-Clicker app automates interaction with target pages by mimicking user b
 - **Reporting:**  
   Create and download a backup file to safeguard your templates. Restore your data effortlessly whenever needed.
 
-   ## Setup & Usage
+## Setup & Usage
 
 ### Install Dependencies:
 1. Ensure Python and Selenium are installed.
